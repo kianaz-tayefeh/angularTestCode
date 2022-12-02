@@ -3,6 +3,11 @@
     <div class="card shadow-0 border rounded-3">
       <div class="card-body">
         <div class="row">
+          <div
+            class="d-flex col-md-1 col-lg-1 col-xl-1 align-items-center justify-content-center"
+          >
+            {{ product.index }}
+          </div>
           <div class="col-md-12 col-lg-3 col-xl-3 mb-4 mb-lg-0">
             <div class="bg-image hover-zoom ripple rounded ripple-surface">
               <img
@@ -21,7 +26,7 @@
               </a>
             </div>
           </div>
-          <div class="col-md-6 col-lg-6 col-xl-6">
+          <div class="col-md-5 col-lg-5 col-xl-5">
             <h5>{{ product.title }}</h5>
             <div class="mt-1 mb-0 text-muted small">
               <h6 class="card-text mb-3" *ngFor="let item of tags">
@@ -61,29 +66,3 @@
     </div>
   </div>
 </div>
-
-<!-- <div class="card col-md-12 col-sm-6 col-lg-12 mt-2">
-  <
-    </div>
-    <div class="col-md-6 col-lg-6">
-      <div class="row">
-        <div class="card-body">
-          <div class="row d-flex justify-content-between">
-            <div class="col-md-6">
-              <h6 class="card-text mb-3" *ngFor="let item of tags">
-                {{ item }}
-              </h6>
-              <app-star [starRating]="product.rating"></app-star>
-            </div>
-            <div class="col-md-6">
-              <p class="card-text mt-5">{{ product.price }}$</p>
-              <button type="button" class="btn btn-secondary mt-4">
-                details
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div> -->

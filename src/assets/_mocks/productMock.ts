@@ -18,7 +18,7 @@ export const ProductMock: ProductModel[] = [
     index: 2,
     image: '../assets/images/laptop.jpg',
     isEdible: true,
-    price: 2.749,
+    price: 2700,
     rating: 4,
     title: 'Laptop',
     tags: ['Best Sales', 'Software', 'Unique design'],

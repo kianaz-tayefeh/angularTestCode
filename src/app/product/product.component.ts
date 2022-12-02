@@ -48,11 +48,11 @@ export class ProductComponent implements OnInit {
           a.title > b.title ? 1 : b.title > a.title ? -1 : 0
         );
         break;
-      case ProductOrderByEnum.id_asc:
-        this.productList.sort((a, b) => (a.id < b.id ? -1 : 1));
+      case ProductOrderByEnum.price_asc:
+        this.productList.sort((a, b) => (a.price < b.price ? -1 : 1));
         break;
-      case ProductOrderByEnum.id_dsc:
-        this.productList.sort((a, b) => (a.id < b.id ? 1 : -1));
+      case ProductOrderByEnum.price_dsc:
+        this.productList.sort((a, b) => (a.price < b.price ? 1 : -1));
         break;
     }
   }
